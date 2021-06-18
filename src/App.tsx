@@ -13,6 +13,12 @@ import Badge from '@material-ui/core/Badge';
 import { Wrapper, StyledButton } from './App.styles';
 
 
+// TS notes
+// 1. Child component takes in Props so you define type for each prop (type Props = {...})
+// 2. Then you do React.FC<Props>, destructure props and consume it in child component
+// 3. You define each state when use states (useState<CartItemType[]>)
+// 4. When you write a function you need to define a type to each parameter of the function 
+
 // Types
 export type CartItemType = {
   id: number,
